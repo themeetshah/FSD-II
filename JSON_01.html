@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Trials</title>
+</head>
+
+<body>
+    <h4>Some outputs are in console</h4>
+    <script>
+        var student = {
+            "FirstName": "xyz",
+            "LastName": "abc",
+            "id": 'st1'
+        }
+        console.log(student.FirstName)
+        console.log(student)
+
+
+        //parse example
+        let obj = `{
+            "var1": "LJ",
+            "var2": "University"
+        }`
+        var obj1 = JSON.parse(obj)
+        console.log(obj1.var1)
+        console.log(obj1.var1 + " " + obj1.var2)
+
+
+        //stringify example
+        let obj2 = {
+            "var1": "LJ",
+            "var2": "University"
+        }
+        var obj3 = JSON.stringify(obj2)
+        console.log(obj3)
+        document.write("Stringify: " + obj3 + "<br><br>")
+        // console.log(obj3.var1 + " " + obj3.var2)  //This won't work as obj3 is now a string
+
+
+        // array:  //api creation is done like this
+        var cars = [{
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+        },
+        {
+            "brand": "Fiat",
+            "model": "500",
+            "year": 2008
+        },
+        {
+            "brand": "Volvo",
+            "model": "XC90",
+            "year": 2008
+        }]
+
+        var jsonCar = JSON.stringify(cars)
+        document.write("Cars:<br>" + jsonCar + "<br><br>")
+        document.write("Car1's brand: " + cars[0].brand + "<br><br>")
+
+
+        // ex1
+        var car1 = {
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964,
+            "showroom": ["T1", "T2", { t3: "Give Again" }]
+        }
+        console.log(car1.showroom[2].t3)
+
+
+        // ex2
+        const a = {
+            'DataStructures': [
+                {
+                    name: 'tree',
+                    course: 'intro',
+                    content: ['I', 'B', 'C']
+                },
+                {
+                    name: 'tree1',
+                    course: 'intro1',
+                    content: ['I', 'B', 'C', 'd']
+                }
+            ],
+            'xyz': {
+                name: 'graphics',
+                topic: ['BFS', 'CDF', 'Sorting']
+            }
+        }
+        console.log(a.DataStructures[1].name)
+        console.log(a.DataStructures[0].name)
+        console.log(a.xyz.name)
+        console.log(a.xyz.topic)
+        console.log(a.xyz.topic[0])
+        console.log(a.DataStructures[0])
+
+
+        // ex3
+        var details = {
+            name: 'MS',
+            dob: '2005-09-03'
+        }
+        var birthdate = new Date(details.dob)
+        console.log(birthdate)
+
+
+        // for in & for of 
+        // for in
+        document.write("<br>for-in loop:")
+        for (x in a.DataStructures) {
+            for (y in a.DataStructures[x]) {
+                document.write("<br>" + a.DataStructures[x][y])
+            }
+        }
+
+        // for of
+        document.write("<br><br>for-of loop:")
+        for (x1 of a.DataStructures) {
+            document.write("<br>" + x1.name)
+            document.write("<br>" + x1.course)
+            document.write("<br>" + x1.content)
+        }
+    </script>
+</body>
+
+</html>

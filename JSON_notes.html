@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Notes</title>
+</head>
+
+<body>
+    <h2>JSON: JavaScript Object Notation</h2>
+    <ul type="square">
+        <li>
+            <ul>
+                <li>It is a text format for storing & transporting data.</li>
+                <li>easy to read, write & understand as it is 'self-describing'.</li>
+                <li>language independent</li>
+                <li>Syntax is similar to JavaScript object literal syntax.</li>
+                <li>Represented in key/value pair</li>
+                <li>
+                    <pre>
+        Syntax:
+            {
+                key : value,
+                key : value
+            }
+                        </pre>
+                </li>
+                <li>Key can or can't be in quotes</li>
+            </ul>
+        </li>
+        <li>
+
+            <h4>JSON supports following datatypes:</h4>
+            <ul>
+                <li>
+                    String:
+                    {"Name" : "xyz"}
+                </li>
+                <li>
+                    Number:
+                    {"age" : 30}
+                </li>
+                <li>
+                    Object:
+                    {employee : {
+                    "FirstName": "xyz",
+                    "LastName": "abc",
+                    "id": 'st1'
+                    }}
+                </li>
+                <li>
+                    Array:
+                    {"nums" : [1,2,3,4]}
+                </li>
+                <li>
+                    Boolean:
+                    {
+                    "FirstName": true,
+                    "LastName": false
+                    }
+                </li>
+                <li>
+                    Null:
+                    {"value" : null}
+                </li>
+            </ul>
+        </li>
+        <li>
+
+            <h4>parse() method</h4>
+            <ul>
+                <li>Syntax: JSON.parse(string)</li>
+                <li>It is a built-in function for converting JSON strings into JS objects</li>
+                <li>Example:
+                    <pre>
+                        let obj = `{
+                            "var1" : "LJ",
+                            "var2" : "University"
+                        }`
+                        var obj1 = JSON.parse(obj)
+                        console.log(obj1.var1)
+                        console.log(obj1.var1+" "+obj1.var2)
+                    </pre>
+                </li>
+            </ul>
+        </li>
+        <li>
+
+            <h4>stringify() method</h4>
+            <ul>
+                <li>Syntax: JSON.stringify(object)</li>
+                <li>It is a built-in function for converting JSON object into string</li>
+                <li>Example:
+                    <pre>
+                        let obj = `{
+                            "var1" : "LJ",
+                            "var2" : "University"
+                        }`
+                        var obj1 = JSON.stringify(obj)
+                        console.log(obj1.var1)
+                    </pre>
+                </li>
+                <li>
+                    This won't work as now obj1 has become a <strong>STRING</strong>: console.log(obj1.var1+"
+                    "+obj1.var2)
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

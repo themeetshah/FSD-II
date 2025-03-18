@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Task 1</title>
+</head>
+
+<body>
+    <pre>
+Write a JSON obj which contains an array of 3 objects.
+Each obj contains 2 prop: name & age.
+Now sort arr values by age in desc order.
+Print name and age in terminal as per sorted age.
+Without using inbuilt sort fxn.
+    </pre>
+
+    <script>
+        var obj = [{
+            "name": "P1",
+            "age": 30
+        },
+        {
+            "name": "P2",
+            "age": 50
+        },
+        {
+            "name": "P3",
+            "age": 20
+        }]
+
+        //without using inbuilt sort fxn
+        for (x in obj) {
+            for (y in obj) {
+                if (obj[x].age > obj[y].age) {
+                    var temp = obj[x];
+                    obj[x] = obj[y];
+                    obj[y] = temp;
+                }
+            }
+        }
+        console.log(obj)
+        document.write("<br>Output:<br>")
+        for (x of obj) {
+            document.write("Name: " + x.name + ", Age: " + x.age + "<br>")
+        }
+    </script>
+</body>
+
+</html>
