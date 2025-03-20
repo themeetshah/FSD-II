@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+Write a fxn named firstandLast that takes an arr as an inp & returns an obj with below conditions:
+        1. The first ele of the arr must be an obj's key
+        2. The last ele of the arr must be an key's value
+    </pre>
+    <script>
+        function firstandLast(division1 = ['abhi', 'sabhi', 'kabhi']) {
+            let obj = {};
+            obj[division1[0]] = division1[division1.length - 1];
+            return obj;
+        }
+
+        let obj1 = firstandLast([1, 2, 3])
+        console.log(obj1);
+        let obj2 = firstandLast([])
+        console.log(obj2);
+        let obj3 = firstandLast()
+        console.log(obj3);
+    </script>
+</body>
+
+</html>

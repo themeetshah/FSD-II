@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        function mydisplay(sum) {
+            document.getElementById("demo").innerHTML = sum;
+        }
+        function mycals(num1, num2, mycallback) {
+            sum = num1 + num2;
+            mycallback(sum)
+        }
+
+        mycals(13, 15, mydisplay)
+
+
+        setTimeout(function () {
+            console.log('Callback as standard fxn')
+        }, 1000);
+
+        setTimeout(() => {
+            console.log('Callback as fat arrow fxn')
+        }, 1000);
+
+        const msg = function () {
+            console.log('Callback')
+        }
+        setTimeout(msg, 1000)
+    </script>
+</body>
+
+</html>

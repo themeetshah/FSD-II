@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Notes</title>
+</head>
+
+<body>
+    <h2>Node.js</h2>
+    <ul type="square">
+        <li>It runs single-threaded, non-blocking, asynchronus programming</li>
+
+        <li>
+            <h4>REPL: Read-Eval-Print Loop</h4>
+
+            <ul>
+                <li>Read: The REPL reads the user input (typically a line of code).</li>
+                <li>Eval: It evaluates the code you've entered, executing it or computing the result.</li>
+                <li>Print: It prints the result of the evaluation, so you can see what happened.</li>
+                <li>Loop: It repeats the process, allowing you to enter more code.</li>
+            </ul>
+
+            <ul>
+                <h5>SIMPLE Expression:</h5>
+                <li>> 1+3</li>
+                <li>> 1+(2*3)-4</li>
+                <li>> var x = 10 </li>
+                <li>> var y = 20 </li>
+                <li>> x = y </li>
+                <li>> console.log('Hello World') </li>
+                <li>> repl.repl.ignoreUndefined = true </li>
+            </ul>
+
+            <ul>
+                <h5>Underscore variable:</h5>
+                <li>Used to get last result</li>
+                <li>> var x = 10;</li>
+                <li>> var y = 20;</li>
+                <li>> x + y</li> <!-- 30 -->
+                <li>> var sum = _</li>
+                <li>> console.log(sum)</li> <!-- 30 -->
+            </ul>
+
+            <ul>
+                <h5>Editor mode:</h5>
+                <li>> .editor</li>
+            </ul>
+
+            <ul>
+                <h5>Commands:</h5>
+                <li>>.save filename</li>
+                <li>>.load filename</li>
+            </ul>
+        </li>
+
+        <li>
+            <h4>Callback</h4>
+            <ul>
+                <li>Function that is passed as an argument to another function</li>
+                <li>Used to handle asynchronous operations</li>
+                <li>setTimeout</li>
+            </ul>
+        </li>
+
+    </ul>
+</body>
+
+</html>
