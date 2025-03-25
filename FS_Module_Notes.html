@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File System Module</title>
+    <h2>fs module</h2>
+    <ul>
+        <li>
+            works on 2 modes - synchronous and asynchronous
+        </li>
+        <li>
+            operations: read,write,update,delete,renam
+        </li>
+        <li>
+            <h4>Synchronous functions:</h4>
+            <ul>
+                <li>
+                    readFileSync(filename,"utf-8") (returns data in unicode format) (so utf-8 to get data in
+                    readable form)
+                </li>
+                <li>
+                    OR
+                    ps.readFileSync("filename")
+                </li>
+                <li>
+                    writefIleSync(filename,"data") (creates new file if does not exists else overwrites)
+                </li>
+                <li>
+                    ps.toString()
+                </li>
+                <li>
+                    appendFileSync(filename,"data") (creates new file if does not exist)(appends at the end of the
+                    file)
+                </li>
+                <li>
+                    unlinkSync(filename) -- (del the file)
+                </li>
+                <li>
+                    renameSync("OldFileName","NewFileName")
+                </li>
+                <li>
+                    <h4>For directory</h4>
+                    <ul>
+                        <li>
+                            - mkdirSync(name) --makes new directory
+                        </li>
+                        <li>
+                            - rmdirSync(name)
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h4>Asynchronous functions:</h4>
+            <ul>
+                <li>
+                    3 attributes to be passed in every fxn
+                </li>
+                <li>
+                    writeFile(filename,"data", callback)
+                </li>
+                <li>
+                    like this in every fxn
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
