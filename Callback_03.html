@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script>
+    // 3 buttons - 1st to increment the size of text
+    // 2nd to decrement the size of text
+    // 3rd to stop - whichever function is executing
+    var size2 = 50;
+    var test;
+    function incrementText() {
+      clearInterval(test);
+      test = setInterval(function () {
+        document.getElementById("text1").style.fontSize = size2 + "px";
+        size2++;
+        if (size2 == 200) {
+          clearInterval(test);
+        }
+      }, 100);
+    }
+
+    function decrementText() {
+      clearInterval(test);
+      test = setInterval(function () {
+        document.getElementById("text1").style.fontSize = size2 + "px";
+        size2--;
+        if (size2 == 10) {
+          clearInterval(test);
+        }
+      }, 100);
+    }
+    function stop() {
+      clearInterval(test);
+    }
+  </script>
+</head>
+
+<body>
+  <button id="incre" style="margin: 10px" onclick="(incrementText())">
+    increment
+  </button>
+  <button id="decre" style="margin: 10px" onclick="(decrementText())">
+    decrement
+  </button>
+  <button id="stop" style="margin: 10px" onclick="stop()">Stop</button>
+  <div id="text1" style="font-size: 50px">Rushvii</div>
+</body>
+
+</html>

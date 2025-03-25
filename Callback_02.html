@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut, setInterval</title>
+    <!-- setTimeout(callbackFunction(),time) -- to delay
+       setInterval(CallbackFunction(),time) -- function will be executed in loop - at time Interval assigned 
+       clearInterval(var-in which time interval is given) -- to clear the setInterval function -- not in syllabus
+    -->
+    <script>
+        // to display the text lju on browser after 5 secs
+        setInterval(function(){
+            document.getElementById('interval').innerHTML="LJU"
+        },5000)
+
+        // to initialize 2 variables and increment both variables each time and display the sum of both variables at interval of 1 sec
+        var a = 5;
+        var b = 10;
+        var x = setInterval(function(){
+            document.getElementById('sum1').innerHTML="a+b"+"="+(a+b);
+             a = a+1
+             b = b+1
+        },1000)
+
+        // write a node js code that display hello with increasing font size at interval of 10ms in blue color when font size reaches to 50px it should stop
+        var size1 = 17;
+        setInterval(function(){           
+            document.getElementById("fontSizeee").style.fontSize = size1+"px"
+            document.getElementById("fontSizeee").style.color = "blue";
+            if(size1<=50){
+                size1++;
+            }
+        },10)
+
+       
+    </script>
+</head>
+<body>
+    <div id="interval"></div>
+    <div id="sum1"></div>
+    <div id="fontSizeee">Hello</div>
+</body>
+</html>
