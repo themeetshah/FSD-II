@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Module</title>
+    <h2>Uniform Resource Locator module</h2>
+    <ul>
+        <li>
+            http://audio.google.com:8080/audioplay?docid=1234&h1=en#1234
+        </li>
+        <li>
+            http: protocol
+        </li>
+        <li>
+            domain: audio.google.com
+        </li>
+        <li>
+            port: 8080
+        </li>
+        <li>
+            path: /audioplay
+        </li>
+        <li>
+            query: ?docid=1234&h1=en
+        </li>
+        <li>
+            fragment: #1234
+        </li>
+        <li>
+            <h4>Methods</h4>
+            <ul>
+                <li>
+                    parse(url, true):
+                    <pre>
+        Url {
+            protocol: 'http:',
+            slashes: true,
+            auth: null,
+            host: 'audio.google.com:8080',
+            port: '8080',
+            hostname: 'audio.google.com',
+            hash: '#1234',
+            search: '?docid=1234&h1=en',
+            query: [Object: null prototype] { docid: '1234', h1: 'en' },
+            pathname: '/audioplay',
+            path: '/audioplay?docid=1234&h1=en',
+            href: 'http://audio.google.com:8080/audioplay?docid=1234&h1=en#1234'
+        }
+                    </pre>
+                </li>
+                <li>
+                    parse(url):
+                    <pre>
+        Url {
+            protocol: 'http:',
+            slashes: true,
+            auth: null,
+            host: 'audio.google.com:8080',
+            port: '8080',
+            hostname: 'audio.google.com',
+            hash: '#1234',
+            search: '?docid=1234&h1=en',
+            query: 'docid=1234&h1=en',
+            pathname: '/audioplay',
+            path: '/audioplay?docid=1234&h1=en',
+            href: 'http://audio.google.com:8080/audioplay?docid=1234&h1=en#1234'
+        }
+                    </pre>
+                </li>
+                <li>url.parse(urlString, parse_query_string)</li>
+                <li>parse_query_string: false (query:string) / true (query:obj)</li>
+            </ul>
+        </li>
+    </ul>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
