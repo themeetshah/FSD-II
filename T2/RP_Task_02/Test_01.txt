@@ -1,0 +1,11 @@
+create folder public and src
+create html file in public
+create js file in src
+in html file, print one form asking fn, ln, submit and run that on server
+
+file structure:
+RP_Task_02
+    |- public
+        |- second.html
+    |- src
+        |- App.js
