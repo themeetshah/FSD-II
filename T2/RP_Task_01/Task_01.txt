@@ -1,0 +1,12 @@
+create folder frontend and backend
+create html and css file in frontend
+create js file in backend
+in html file, print one paragraph, format it using css file and run that on server
+
+file structure:
+RP_Task_01
+    |- frontend
+        |- homepage.html
+        |- style.css
+    |- backend
+        |- App.js
