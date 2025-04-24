@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setFormAction(action) {
+            document.getElementById("form").action = action;
+        }
+    </script>
+</head>
+
+<body>
+    <form id="form" method="get">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fn" id="fname">
+        <br>
+        <br>
+        <label for="lname">Last Name:</label>
+        <input type="text" name="ln" id="lname">
+        <br>
+        <br>
+        <input type="submit" value="Submit to /process_get" onclick="setFormAction('/process_get');">
+        <input type="submit" value="Submit to /process_get_json" onclick="setFormAction('/process_get_json');">
+    </form>
+</body>
+
+</html>
