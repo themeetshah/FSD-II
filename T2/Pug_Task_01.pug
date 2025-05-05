@@ -1,0 +1,15 @@
+html 
+    head 
+        title= Form
+    body 
+        h1 Login 
+        form(action='/login', method='post')
+            | Username 
+            input(type='text', name='uname')
+            br
+            br
+            label Password 
+            input(type='password', name='pass')
+            br
+            br
+            input(type='submit') 
