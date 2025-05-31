@@ -6,6 +6,13 @@ import Ex3 from './PB_301.js'
 import Ex4 from './PB_358_01.js'
 import Ex5 from './PB_358_02.js'
 import Map from './ReactMap.js'
+import Filter from './ReactFilter.js'
+import PB360 from './PB_360.js'
+import PB362 from './PB_362.js'
+import OnClick from './ReactEvent_onClick.js'
+import OnDoubleClick from './ReactEvent_onDoubleClick.js'
+import OnChange from './ReactEvent_onChange.js'
+import Navbar from './components/Navbar';
 
 function App() {
 
@@ -22,6 +29,7 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <Car />
 
       <Ex name={n} roll='101' marks='12' />
@@ -64,6 +72,30 @@ function App() {
       <Map arr1={arr} />
 
       <Ex5 studs={studs} />
+
+      {/* array filter */}
+      <Filter />
+
+      {/* PB360 */}
+      <PB360 />
+
+      {/* PB362 and PB373 */}
+      <PB362 />
+
+      {/* event */}
+      <OnClick />
+
+      <br />
+      <br />
+
+      {/* event */}
+      <OnDoubleClick />
+
+      <br />
+      <br />
+
+      {/* event */}
+      <OnChange />
     </>
   );
 }
