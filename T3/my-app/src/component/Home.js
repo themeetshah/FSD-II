@@ -1,7 +1,8 @@
 const Home = () => {
     return (
         <div>
-            <h1 >Mobile shopping Website</h1>
+            <h1 >Website content: Welcome to Website</h1>
+            <br />
         </div>
     )
 }

@@ -1,8 +1,8 @@
 const Contact = () => {
     return (
         <div>
-            <h1>Contact Detail</h1>
-            <h3> DM me For Order</h3>
+            <h1>Website content: Contact Detail</h1>
+            <br />
         </div>
     )
 }

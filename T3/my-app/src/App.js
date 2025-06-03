@@ -13,6 +13,8 @@ import OnClick from './ReactEvent_onClick.js'
 import OnDoubleClick from './ReactEvent_onDoubleClick.js'
 import OnChange from './ReactEvent_onChange.js'
 import Navbar from './components/Navbar';
+import Counter from './ReactCountApp.js'
+import Change from './useState_01.js'
 
 function App() {
 
@@ -96,6 +98,12 @@ function App() {
 
       {/* event */}
       <OnChange />
+
+      {/* useState */}
+      <Counter />
+
+      {/* change color */}
+      <Change />
     </>
   );
 }

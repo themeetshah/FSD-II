@@ -6,12 +6,12 @@ const Navbar = () => {
     return (
         <Router>
             <div>
-                <nav className="navbar navbar-inverse">
+                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                     <div className="container-fluid">
                         <ul className="nav navbar-nav">
-                            <li className="active"><Link to="/">Home</Link></li>
-                            <li><Link to="/Product">Product</Link></li>
-                            <li><Link to="/Contact">Contact</Link></li>
+                            <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
+                            <li className="nav-item"><Link className="nav-link" to="/Product">Product</Link></li>
+                            <li className="nav-item"><Link className="nav-link" to="/Contact">Contact</Link></li>
                         </ul>
                     </div>
                 </nav>
