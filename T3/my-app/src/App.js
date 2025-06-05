@@ -13,8 +13,12 @@ import OnClick from './ReactEvent_onClick.js'
 import OnDoubleClick from './ReactEvent_onDoubleClick.js'
 import OnChange from './ReactEvent_onChange.js'
 import Navbar from './components/Navbar';
-import Counter from './ReactCountApp.js'
+import Counter from './ReactUseState.js'
 import Change from './useState_01.js'
+import HideShow1 from './useState_02_01.js'
+import HideShow2 from './useState_02_02.js'
+import WriteNDisplay from './useState_03.js'
+import Reducer from './ReactUseReducer.js'
 
 function App() {
 
@@ -104,6 +108,18 @@ function App() {
 
       {/* change color */}
       <Change />
+
+      {/* hide and show */}
+      <HideShow1 />
+
+      {/* hide and show */}
+      <HideShow2 />
+
+      {/* hide and show */}
+      <WriteNDisplay />
+
+      {/* useReducer */}
+      <Reducer />
     </>
   );
 }
