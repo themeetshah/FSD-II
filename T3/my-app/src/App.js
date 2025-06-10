@@ -19,6 +19,7 @@ import HideShow1 from './useState_02_01.js'
 import HideShow2 from './useState_02_02.js'
 import WriteNDisplay from './useState_03.js'
 import Reducer from './ReactUseReducer.js'
+import Context from './ReactUseContext.js'
 
 function App() {
 
@@ -120,6 +121,10 @@ function App() {
 
       {/* useReducer */}
       <Reducer />
+
+      {/* useReducer */}
+      <br />
+      <Context />
     </>
   );
 }
