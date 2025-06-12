@@ -1,25 +1,27 @@
-import img from './img1.png'
-import Car from './car.js'
-import Ex from './Ex.js'
-import Prop from './prop1.js'
-import Ex3 from './PB_301.js'
-import Ex4 from './PB_358_01.js'
-import Ex5 from './PB_358_02.js'
-import Map from './ReactMap.js'
-import Filter from './ReactFilter.js'
-import PB360 from './PB_360.js'
-import PB362 from './PB_362.js'
-import OnClick from './ReactEvent_onClick.js'
-import OnDoubleClick from './ReactEvent_onDoubleClick.js'
-import OnChange from './ReactEvent_onChange.js'
-import Navbar from './components/Navbar';
-import Counter from './ReactUseState.js'
-import Change from './useState_01.js'
-import HideShow1 from './useState_02_01.js'
-import HideShow2 from './useState_02_02.js'
-import WriteNDisplay from './useState_03.js'
-import Reducer from './ReactUseReducer.js'
-import Context from './ReactUseContext.js'
+// import img from './img1.png'
+import Car from './car.jsx'
+import Ex from './Ex.jsx'
+import Prop from './prop1.jsx'
+import Ex3 from './PB_301.jsx'
+import Ex4 from './PB_358_01.jsx'
+import Ex5 from './PB_358_02.jsx'
+import Map from './ReactMap.jsx'
+import Filter from './ReactFilter.jsx'
+import PB360 from './PB_360.jsx'
+import PB362 from './PB_362.jsx'
+import OnClick from './ReactEvent_onClick.jsx'
+import OnDoubleClick from './ReactEvent_onDoubleClick.jsx'
+import OnChange from './ReactEvent_onChange.jsx'
+import Navbar from './components/Navbar.jsx';
+import Counter from './ReactUseState.jsx'
+import Change from './useState_01.jsx'
+import HideShow1 from './useState_02_01.jsx'
+import HideShow2 from './useState_02_02.jsx'
+import WriteNDisplay from './useState_03.jsx'
+import Reducer from './ReactUseReducer.jsx'
+import Context from './ReactUseContext.jsx'
+import Form from './ReactForm.js'
+import Axios from './ReactAxios.js'
 
 function App() {
 
@@ -52,7 +54,7 @@ function App() {
 
       {/* img display */}
       {/* <img src='img1.png' alt='download react'></img> */}
-      <img src={img} alt='download react'></img>
+      {/* <img src={img} alt='download react'></img> */}
 
       <Prop />
 
@@ -119,12 +121,24 @@ function App() {
       {/* hide and show */}
       <WriteNDisplay />
 
+      <br />
       {/* useReducer */}
       <Reducer />
 
-      {/* useReducer */}
       <br />
+      <br />
+      {/* useContext */}
       <Context />
+
+      <br />
+      <br />
+      {/* Form */}
+      <Form />
+
+      <br />
+      <br />
+      {/* Axios */}
+      <Axios />
     </>
   );
 }
